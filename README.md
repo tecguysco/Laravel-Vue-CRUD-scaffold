@@ -6,39 +6,12 @@ Please check the official laravel installation guide for server requirements bef
 
 Alternative installation is possible without local dependencies relying on [Docker](#docker). 
 
-Clone the repository
-
-    git clone https://github.com/Rafieaydin/Crud-laravel-vue-js.git
-
-Switch to the repo folder
-
-    cd Crud-laravel-vue-js
-
-Install all the dependencies using composer
-
-    composer install
-
-Copy the example env file and make the required configuration changes in the .env file
-
-    cp .env.example .env
-
-Generate a new application key
-
-    php artisan key:generate
-
-Run the database migrations (**Set the database connection in .env before migrating**)
-
-    php artisan migrate
-
-Start the local development server
-
-    php artisan serve
-
-You can now access the server at http://localhost:8000
+node v12.22
+PHP v8.1
 
 **TL;DR command list**
 
-    git clone <project)>
+    git clone <project>
     cd <project>
     composer install
     cp .env.example .env
@@ -47,6 +20,9 @@ You can now access the server at http://localhost:8000
 **Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
 
     php artisan migrate
+    php artisan db:seed
+    npm install 
+    npm run watch
     php artisan serve
 
 ## credit
